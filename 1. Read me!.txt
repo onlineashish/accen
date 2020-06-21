@@ -1,0 +1,5 @@
+HEY, 
+some modules(java, rdbms, unix) in this folders might not have the same activities
+as you do that's simply because you have a different set of questions.
+Do not worry, Admin is trying to get all the answers.
+If you can contribute to the folder as well, TEXT @vikingsrule on telegram.

@@ -1,0 +1,46 @@
+ import java.util.Scanner;
+    2 import java.lang.*;
+    3 class SortDriver{
+    4     public final static int MAX =100;
+    5     public static String alternateSort(String s1)
+    6     {
+    7     int n= s1.length();
+    8     char [] s = s1.toCharArray();
+    9     int[] lCount = new int [MAX];
+   10     int[] uCount = new int [MAX];
+   11     for (int i=0;i<n;i++)
+   12     {
+   13         if(Character.isUpperCase(s[i]))
+   14         uCount[s[i] - 'A']++;
+   15         else
+   16         lCount[s[i] - 'a']++;
+   17     }
+   18     int i=0,j=0,k=0;
+   19     while(k<n)
+   20     {
+   21         while(i<MAX && uCount[i] ==0)
+   22         i++;
+   23         if(i<MAX)
+   24         {
+   25             s[k++]= (char)('A'+i);
+   26             uCount[i]--;
+   27         }
+   28         while(j<MAX && lCount[j]==0)
+   29         j++;
+   30         if(j<MAX)
+   31         {
+   32             s[k++]= (char)('a'+j);
+   33             lCount[j]--;
+   34         }
+   35     }
+   36     return(new String(s));
+   37     }
+   38     public static void main(String[] args) {
+   39         Scanner input = new Scanner(System.in);
+   40         System.out.println("Enter the String:");
+   41         String str;
+   42         str =input.nextLine();
+   43         System.out.println("the Sorted String is:");
+   44         System.out.println(alternateSort(str));
+   45     }
+   46 }
