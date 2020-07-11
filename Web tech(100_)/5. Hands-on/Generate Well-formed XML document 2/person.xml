@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persons>
+    <person>
+        <name>Shivani</name>
+        <age>20</age>
+        <gender>female</gender>
+        <address>
+            <doorno>75</doorno>
+            <street>Shakkarnagar</street>
+            <city>Bodhan</city>
+            <state>Telangana</state>
+            </address>
+            <student>
+                <rollno>14</rollno>
+                <standard>17</standard>
+                <section>A</section>
+                </student>
+                </person>
+                </persons>
+                
